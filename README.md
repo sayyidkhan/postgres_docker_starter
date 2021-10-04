@@ -24,7 +24,7 @@ docker exec -it pgdata psql -U postgres
 ```
 #### Connecting using GUI
 - download [dbeaver](https://dbeaver.io/download/)
-- 
+- *username:* postgres
 
 
 ### 3. Automate - run scripts using docker CLI
