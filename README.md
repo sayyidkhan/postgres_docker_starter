@@ -7,8 +7,8 @@
 ## Agenda
 
 ### 1. Create a Postgres docker container
+###### replace my_current_directory with your current directory
 ```bash
-## replace my_current_directory with your current directory
 export MY_CURRENT_DIR=/Users/sayyidkhan/docker_volumes;
 
 docker run --name pgdata \
