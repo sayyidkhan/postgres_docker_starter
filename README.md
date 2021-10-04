@@ -3,6 +3,7 @@
 ### youtube guides
 - [Learn how to use postgres sql with docker](https://www.youtube.com/watch?v=A8dErdDMqb0)
 - [Docker with persistent storage](https://www.youtube.com/watch?v=G3gnMSyX-XM&t=1s)
+- [Docker Volumes Setup](https://www.youtube.com/watch?v=G-5c25DYnfI)
 
 ## Agenda
 
