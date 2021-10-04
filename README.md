@@ -8,7 +8,7 @@
 ### 1. Create a Postgres docker container
 ```bash
 docker run --name pgdata \
-  -p 5432:532 -d \
+  -p 5432:5432 -d \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_DB=stripe-example \
@@ -17,12 +17,13 @@ docker run --name pgdata \
 ```
 
 ### 2. Connect and run some queries
-connecting manually
+#### connecting manually
 ```bash
 docker exec -it pgdata psql -U postgres
 ```
 #### Connecting using GUI
 - download [dbeaver](https://dbeaver.io/download/)
+- 
 
 
 ### 3. Automate - run scripts using docker CLI
