@@ -9,7 +9,7 @@
 ### 1. Create a Postgres docker container
 ###### replace my_current_directory with your current directory
 ```bash
-export MY_CURRENT_DIR=/Users/sayyidkhan/docker_volumes;
+export MY_CURRENT_DIR=/Users/sayyidkhan/docker_volumes/pgdata;
 
 docker run --name pgdata \
   -p 5432:5432 -d \
