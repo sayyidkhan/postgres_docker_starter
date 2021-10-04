@@ -43,5 +43,5 @@ docker exec -it pgdata psql -U postgres
 ### 3. Automate - run scripts using docker CLI
 ###### sql script w/o using .sql file
 ```bash
-docker exec -it pgdata psql -U postgres -c "CREATE TABLE public.demo_table(something int);"
+docker exec -it pgdata psql -U postgres -c "\c demo CREATE TABLE public.demo_table(something int);"
 ```
