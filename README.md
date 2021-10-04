@@ -7,7 +7,7 @@
 
 ### 1. Create a Postgres docker container
 ```bash
-docker run -name pgdata \
+docker run --name pgdata \
   -p 5432:532 -d \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_USER=postgres \
