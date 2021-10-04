@@ -8,12 +8,15 @@
 
 ### 1. Create a Postgres docker container
 ```bash
+## replace my_current_directory with your current directory
+export MY_CURRENT_DIR=/Users/sayyidkhan/docker_volumes;
+
 docker run --name pgdata \
   -p 5432:5432 -d \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_DB=stripe-example \
-  -v pgdata:/var/lib/postgresql/data \
+  -v $MY_CURRENT_DIR:/var/lib/postgresql/data \
   postgres
 ```
 
