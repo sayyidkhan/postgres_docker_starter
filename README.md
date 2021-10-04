@@ -16,4 +16,4 @@ docker exec -it demo psql -U postgres
 ### 3. Automate - run scripts using docker CLI
 
 ## Connecting using GUI
-- download dbeaver
+- download [dbeaver](https://dbeaver.io/download/)
