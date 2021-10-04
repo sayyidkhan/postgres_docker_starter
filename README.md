@@ -16,7 +16,7 @@ docker run --name pgdata \
   -p 5432:5432 -d \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_USER=postgres \
-  -e POSTGRES_DB=stripe-example \
+  -e POSTGRES_DB=demo \
   -v $MY_CURRENT_DIR:/var/lib/postgresql/data \
   postgres
 ```
@@ -43,5 +43,5 @@ docker exec -it pgdata psql -U postgres
 ### 3. Automate - run scripts using docker CLI
 ###### sql script w/o using .sql file
 ```bash
-docker exec -it pgdata psql -U postgres -c "CREATE TABLE stripe-example.demo_t2(something int);"
+docker exec -it pgdata psql -U postgres -c "CREATE TABLE demo.demo_table(something int);"
 ```
