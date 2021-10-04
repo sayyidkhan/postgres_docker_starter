@@ -14,3 +14,6 @@ docker run --name demo -e POSTGRES_PASSWORD=password -d postgres
 docker exec -it demo psql -U postgres
 ```
 ### 3. Automate - run scripts using docker CLI
+
+## Connecting using GUI
+- download dbeaver
