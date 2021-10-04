@@ -10,5 +10,7 @@ docker run --name demo -e POSTGRES_PASSWORD=password -d postgres
 ```
 
 ### 2. Connect and run some queries
-
+```bash
+docker exec -it demo psql -U postgres
+```
 ### 3. Automate - run scripts using docker CLI
