@@ -45,5 +45,5 @@ docker exec -it pgdata psql -U postgres
 ```bash
 docker exec -it pgdata psql -U postgres -f "$PWD/script_demo1.sql"
 docker exec -it pgdata psql -U postgres -d demo -c "CREATE TABLE demo_db2(something int)";
-docker exec -it pgdata psql -U postgres -d demo -f script_demo1.sql
+docker exec -it pgdata psql -U postgres -d demo -a -f script_demo1.sql
 ```
