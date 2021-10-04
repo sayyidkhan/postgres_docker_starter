@@ -5,6 +5,9 @@
 ## Agenda
 
 ### 1. Create a Postgres docker container
+```bash
+docker run -name demo -e POSTGRES_PASSWORD=password -d postgres
+```
 
 ### 2. Connect and run some queries
 
