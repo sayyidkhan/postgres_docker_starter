@@ -8,6 +8,8 @@
 ## Agenda
 
 ### 1. Create a Postgres docker container
+
+#### Connect via command line / bash script
 ###### replace my_current_directory with your current directory
 ```bash
 export MY_CURRENT_DIR=/Users/sayyidkhan/docker_volumes/pgdata;
@@ -19,6 +21,23 @@ docker run --name pgdata \
   -e POSTGRES_DB=demo \
   -v $MY_CURRENT_DIR:/var/lib/postgresql/data \
   postgres
+```
+
+#### Connect via docker compose
+**how to spin up the database instance**
+How to get started using the database
+
+1. ensure docker is installed on your computer
+2. open a terminal in the current directory
+3. run this command in this current directory of this file
+
+```bash
+docker-compose up
+```
+
+**how to shutdown the database instance**
+```bash
+docker-compose down
 ```
 
 ### 2. Connect and run some queries
